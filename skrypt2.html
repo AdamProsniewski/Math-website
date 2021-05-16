@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fibonacci(n)
+        {
+            if(n<2) return n;
+            return fibonacci(n-1)+fibonacci(n-2);
+        }
+        function fibonacciWynik()
+        {
+            var n = document.forms["dane"]["liczba"].value;
+            document.getElementById("target").textContent = ("F"+n+" = " +fibonacci(n));
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form name="dane" onsubmit="return fibonacciWynik()" method="POST">
+        <label for="liczba">Podaj element ciągu Fibonacciego:</label><br>
+        <input type="text" name= "liczba" id="liczba"><br>
+        <input type="submit" value="Submit" ><br>
+    </form>
+    <p id="target"></p>
+</body>
+</html>

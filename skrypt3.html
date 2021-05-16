@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function NWD()
+        {
+            var liczba1 = parseInt(document.forms["dane"]["liczba"].value);
+            var liczba2 = parseInt(document.forms["dane"]["liczba2"].value);
+            var x = true
+            while(x)
+            {
+                if (liczba1==liczba2)
+                {
+                    document.getElementById("target").textContent = ("Największym wspólnym dzielnikiem jest: " + liczba2);
+                    x = false;
+                    return false;
+                }else
+                {
+                    if(liczba1 > liczba2)
+                    {
+                        liczba1 = liczba1 - liczba2;
+                    }else
+                    {
+                        liczba2 = liczba2 - liczba1;
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="dane" onsubmit="return NWD()" method="POST">
+        <label for="liczba">Podaj 2 liczby całkowite:</label><br>
+        <input type="text" name= "liczba" id="liczba"><br>
+        <input type="text" name= "liczba2" id="liczba2"><br>
+        <input type="submit" value="Submit" ><br>
+    </form>
+    <p id="target"></p>
+</body>
+</html>

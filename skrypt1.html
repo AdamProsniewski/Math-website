@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function maximum()
+        {
+            var liczby = document.forms["dane"]["liczby"].value;
+            var liczbytab = liczby.split(",")
+            var liczbamax = 0;
+            if(liczbytab.length != 7){
+                alert("Zła ilość liczb");
+                return false;
+            }else{
+                for (i=0; i < liczbytab.length; i++)
+                {
+                    if(Number(liczbytab[i]) > Number(liczbamax))
+                    {
+                        liczbamax = liczbytab[i];
+                    }
+                    
+                }
+                document.getElementById("target").textContent = ("Największa liczba to: "+liczbamax);
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="dane" onsubmit="return maximum()" method="POST">
+        <label for="liczby">Podaj 7 liczb oddzielonych przecinkiem:</label><br>
+        <input type="text" name= "liczby" id="liczby"><br>
+        <input type="submit" value="Submit" ><br>
+    </form>
+    <p id="target"></p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function email(email){
+        const mailReg = new RegExp('^[0-9a-z_.-]+@[0-9a-z.-]+\.[a-z]{2,3}$','i')
+        if (!mailReg.test(email)){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    function sprawdź(){
+        var input = document.forms["dane"]["imie"].value;
+        var input2 = document.forms["dane"]["nazwisko"].value;
+        var input3 = document.forms["dane"]["email"].value;
+        const reg = /[a-zA-ZąĄćĆęĘłŁńŃóÓśŚźŹżŻ]/g
+        if (input=="" | input2=="") {
+            alert('nie wpisałeś żadnej wartości!')
+            return false
+        } else {
+            if(!reg.test(input) | !reg.test(input2)){
+                alert("Co to za dziwne imię?...");
+                return false
+
+            }else{
+               if (email(input3)==false) {
+                   alert("Zły email lub brak emaila")
+                   return false
+               } else {
+                alert('Twoje imie i nazwisko to: ' +input[0].toUpperCase() + input.slice(1)+" "
+                +input2[0].toUpperCase() + input2.slice(1) + " " + "Twój email to: " + input3);
+                return false
+               }
+            }
+            
+        }
+    }
+    </script>
+</head>
+<body>
+    <form name="dane" onsubmit="return sprawdź()" method="post">
+        <label for="imie">Imie:</label><br>
+        <input type="text" name= "imie" id="imie"><br>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" name= "nazwisko" id="nazwisko"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email"><br>
+        <input type="submit" value="Submit"><br>
+   </form>
+</body>
+</html>

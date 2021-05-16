@@ -81,4 +81,7 @@ The project is completed and no longer worked on as it's purpose was strictly ed
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+
+
+Created by [@AdamProsniewski](https://github.com/AdamProsniewski) - feel free to contact me!
+

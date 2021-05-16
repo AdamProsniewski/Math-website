@@ -7,12 +7,9 @@
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
 
 
 ## General Information
@@ -36,12 +33,30 @@ List the ready features here:
 - Finding the maximum number in a series
 - Calculating an element of the fibonacci sequence
 - Finding the largest common denominator of 2 intigers
-- A log in form with an automatic syntax checking
+- A log in form with an automatic syntax checking and basic autocorrection
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+
+**The menu**
+
+![Example screenshot](./img/screen1.png)
+
+**Calculate maximum**
+
+![Example screenshot2](./img/screen2.png)
+
+**Calculate an element of the fibonacci sequence**
+
+![Example screenshot3](./img/screen3.png)
+
+**Find the largest common denominator**
+
+![Example screenshot4](./img/screen4.png)
+
+**The log in form with syntax check**
+
+![Example screenshot5](./img/screen5.png)
 
 
 ## Setup
@@ -54,22 +69,15 @@ The project is completed and no longer worked on as it's purpose was strictly ed
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+### Areas, which could be improved/expanded
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Inclusion of additional mathematical scripts
 
-To do:
-- Feature to be added 1
-- Feature to be added 2
+- Full english translation
 
+- Fibonacci sequence calculation time
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- General optimization
 
 
 ## Contact

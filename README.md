@@ -40,23 +40,23 @@ List the ready features here:
 
 **The menu**
 
-![Example screenshot](./img/screen1.png)
+![Example screenshot](./screen1.png)
 
 **Calculate maximum**
 
-![Example screenshot2](./img/screen2.png)
+![Example screenshot2](./screen2.png)
 
 **Calculate an element of the fibonacci sequence**
 
-![Example screenshot3](./img/screen3.png)
+![Example screenshot3](./screen3.png)
 
 **Find the largest common denominator**
 
-![Example screenshot4](./img/screen4.png)
+![Example screenshot4](./screen4.png)
 
 **The log in form with syntax check**
 
-![Example screenshot5](./img/screen5.png)
+![Example screenshot5](./screen5.png)
 
 
 ## Setup
